@@ -15,6 +15,8 @@ if i<50:
     print ( "i is less than 50")
 elif i>50:
     print('i is greater than 50')
+else:
+    print ("i is equal to 50")
 
 
 # TODO: Write a conditional that prints the color of the picked fruit
@@ -23,14 +25,14 @@ if picked_fruit=="orange":
     print("color is Orange")
 elif picked_fruit=="strawberry":
     print("color is Pink")
-if picked_fruit=="banana":
+else:
     print("Color is Yellow")
 
 # TODO: Write a function that multiplies two numbers and returns the result
 # Define the function here.
 
-value1=int(input("Enter value1:" ))
-value2=int(input("Enter value2:" ))
+value1=int(input("Enter a Number:" ))
+value2=int(input("Enter another Number:" ))
 
 def multiply(value1,value2):
     result = value1*value2
