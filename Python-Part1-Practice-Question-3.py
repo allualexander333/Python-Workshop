@@ -1,24 +1,25 @@
 # 3. Write a Python program to find the digits which are absent in a given mobile number
 
 
-a1 = []
+mobile = []
 a = int(input("Enter a mobile number (only 10 digit): "))
-c = 0
-while (c <= 9):
-    a1.append(a % 10) 
+count = 0
+while (count <= 9):
+    mobile.append(a % 10) 
     a = int ( a / 10 )
-    c = c + 1
+    count = count + 1
 
-n = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-b = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+temp1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+empty = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-for i in a1:
-    for j in n:
+for i in mobile:
+    for j in temp1:
         if i == j:
             k=int(i)
-            b[k] = True
+            empty[k] = True
 l = 0
-for m in b:
-    if m == False:
-       print(n[l],"is not present in the number")
+print("Below are the number which are not there in your mobile number")
+for m in empty:
+    if m == 0:
+       print(temp1[l],"\t")
     l += 1
